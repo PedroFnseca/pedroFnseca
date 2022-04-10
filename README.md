@@ -2,7 +2,7 @@
 <h2> 🚀 Backend enthusiast </h2>
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=pedrofnseca&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
+  <img height="140em" src="https://github-readme-stats.vercel.app/api?username=pedrofnseca&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
 </div>
 
 <div align="center" display: "inline_block">
@@ -17,5 +17,5 @@
 <br>
 
 <div align="center">
-<img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedrofnseca&layout=compact&langs_count=7&theme=dark"/>
+<img height="140em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedrofnseca&layout=compact&langs_count=7&theme=dark"/>
 </div>
