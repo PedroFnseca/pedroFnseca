@@ -9,9 +9,10 @@
 ##
 
 <div align="center" display: "inline_block">
-<img align="center" height="60" width="60" src="https://img.icons8.com/color/2x/nodejs.png" >
+<h1>Stacks and languages:</h1>
+<img align="center" height="60" width="60" src="https://img.icons8.com/fluency/2x/node-js.png" >
+<img align="center" height="60" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" >
 <img align="center" height="60" width="60" src="https://img.icons8.com/color/2x/javascript.png" >
 <img align="center" height="60" width="60" src="https://img.icons8.com/color/2x/python.png" >
 <img align="center" height="60" width="60" src="https://img.icons8.com/color/2x/mysql-logo.png" >
-<img align="center" height="60" width="60" src="https://img.icons8.com/color/2x/react-native.png" >
 </div>
