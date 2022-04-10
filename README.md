@@ -8,7 +8,7 @@
 
 ##
 
-<div>
+<div align="center">
 <img align="center" height="60" width="60" src="https://img.icons8.com/color/2x/nodejs.png" >
 <img align="center" height="60" width="60" src="https://img.icons8.com/color/2x/javascript.png" >
 <img align="center" height="60" width="60" src="https://img.icons8.com/color/2x/python.png" >
