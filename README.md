@@ -11,7 +11,7 @@
 <img align="center" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" >
 <img align="center" height="60" width="60" src="https://img.icons8.com/color/2x/javascript.png" >
 <img align="center" height="60" width="60" src="https://img.icons8.com/color/2x/python.png" >
-<img align="center" height="60" width="60" src="https://img.icons8.com/color/2x/mysql-logo.png" >
+<img align="center" height="70" width="70" src="https://img.icons8.com/color/2x/mysql-logo.png" >
 </div>
 
 <br>
