@@ -1,9 +1,7 @@
-<h1> 📌 Hi there, my name is Pedro Fonseca! </h1>
+<h1> 📌 Hi there, my name is Pedro Fonseca! </h1> 
 <h2> 🚀 Backend enthusiast </h2>
 
-<div align="center">
-  <img height="145em" src="https://github-readme-stats.vercel.app/api?username=pedrofnseca&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
-</div>
+<br>
 
 <div align="center" display: "inline_block">
 <h2>Stacks and languages:</h2>
