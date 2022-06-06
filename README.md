@@ -11,6 +11,9 @@
 <img align="center" height="60" width="60" src="https://img.icons8.com/color/2x/python.png" >
 <img align="center" height="70" width="70" src="https://img.icons8.com/color/2x/mysql-logo.png" >
 <img align="center" height="60" width="70" src="https://img.icons8.com/color/344/docker.png" >
+<img align="center" height="55" width="70" src="https://img.icons8.com/color/344/firebase.png" >
+<img align="center" height="65" width="70" src="https://img.icons8.com/color/344/html-5--v1.png" >
+<img align="center" height="65" width="70" src="https://img.icons8.com/color/344/css3.png" >
 </div>
 
 <br>
