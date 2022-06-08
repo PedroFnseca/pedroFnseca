@@ -1,5 +1,4 @@
-<h1> 📌 Hi there, my name is Pedro Fonseca! </h1> 
-<h2> 🚀 Backend enthusiast </h2>
+<h1> 🚀 Backend enthusiast </h1>
 
 <br>
 
