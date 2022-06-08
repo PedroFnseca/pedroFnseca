@@ -1,7 +1,6 @@
 > # 🚀 Backend enthusiast  
 
 <br>
-<br>
 
 <div align="center" display: "inline_block">
   
@@ -18,7 +17,6 @@
 <img align="center" height="65" width="70" src="https://img.icons8.com/color/344/css3.png" >
 </div>
 
-<br>
 <br>
 
 <div align="center">
