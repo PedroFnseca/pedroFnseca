@@ -1,4 +1,4 @@
-> # 🚀 Entusiasta de back-end 
+> # 🚀 Backend enthusiast  
 
 <br>
 <br>
