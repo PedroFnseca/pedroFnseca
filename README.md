@@ -20,8 +20,13 @@
 
 <br>
 <br>
-<br>
 
 <div align="center">
 <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedrofnseca&layout=compact&langs_count=7&theme=dark"/>
+
 </div>
+
+<br>
+<br>
+
+> # @pedrofnseca at all plataforms
