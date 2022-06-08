@@ -1,10 +1,12 @@
-<h1> 🚀 Backend enthusiast </h1>
+> # 🚀 Entusiasta de back-end 
 
 <br>
 <br>
 
 <div align="center" display: "inline_block">
-<h2>Stacks and languages:</h2>
+  
+## Stacks and languages
+  
 <img align="center" height="55" width="55" src="https://img.icons8.com/fluency/2x/node-js.png" >
 <img align="center" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" >
 <img align="center" height="60" width="60" src="https://img.icons8.com/color/2x/javascript.png" >
