@@ -1,4 +1,4 @@
-# <img align="center" src="https://img.icons8.com/color/48/000000/linux--v1.png"/> Backend enthusiast
+<h1 align="center"> <img align="center" src="https://img.icons8.com/color/48/000000/linux--v1.png"/> Backend enthusiast </h1>
 <br>
 
 <div align="center" display: "inline_block">
@@ -27,7 +27,4 @@
 <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedrofnseca&layout=compact&langs_count=7&theme=dark"/>
 </p>
 
-<br>
-<br>
-
-> ## @pedrofnseca at all plataforms
+> <h3 align="center"> pedrofnseca at all plataforms </h3>
