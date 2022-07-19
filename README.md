@@ -5,15 +5,15 @@
   
 ### 👨‍💻 languages and tools 🛠️
 
-<img align="center" src="https://img.icons8.com/color/60/javascript.png" >
-<img align="center" src="https://img.icons8.com/color/60/python.png" >
+<img align="center" src="https://img.icons8.com/color/48/javascript.png" >
+<img align="center" src="https://img.icons8.com/color/48/python.png" >
 <img align="center" src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>
 <img align="center" src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"/>
 <img align="center" src="https://img.icons8.com/color/48/000000/android-studio--v3.png"/>
-<img align="center" src="https://img.icons8.com/color/60/html-5--v1.png" >
-<img align="center" src="https://img.icons8.com/color/60/css3.png" >
-<img align="center" src="https://img.icons8.com/color/60/mysql-logo.png" >
-<img align="center" src="https://img.icons8.com/color/60/firebase.png" >
+<img align="center" src="https://img.icons8.com/color/48/html-5--v1.png" >
+<img align="center" src="https://img.icons8.com/color/48/css3.png" >
+<img align="center" src="https://img.icons8.com/color/48/mysql-logo.png" >
+<img align="center" src="https://img.icons8.com/color/48/firebase.png" >
 <img align="center" src="https://img.icons8.com/color/48/000000/nodejs.png"/>
 <img align="center" src="https://img.icons8.com/color/48/000000/react-native.png"/>
 <img align="center" src="https://img.icons8.com/color/48/000000/heroku.png"/>
