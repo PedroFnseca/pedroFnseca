@@ -1,7 +1,7 @@
 <h1 align="center"> 
-<img align="center" src="https://img.icons8.com/external-filled-outline-wichaiwi/48/000000/external-backend-jobs-and-occupations-filled-outline-wichaiwi.png"/>
+<img align="center" src="https://img.icons8.com/external-filled-outline-wichaiwi/30/000000/external-backend-jobs-and-occupations-filled-outline-wichaiwi.png"/>
 Backend developer
-<img align="center" src="https://img.icons8.com/color/48/000000/linux--v1.png"/> 
+<img align="center" src="https://img.icons8.com/color/30/000000/linux--v1.png"/> 
 </h1>
 <br>
 
