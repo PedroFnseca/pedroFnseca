@@ -4,9 +4,7 @@ Backend Developer
 <img align="center" src="https://img.icons8.com/color/30/000000/linux--v1.png"/> 
 </h1>
 
-<p align="center">
-<img height="175em" src="https://user-images.githubusercontent.com/97262778/182006168-071f6b54-64d2-4a24-a692-00a9565b7993.gif">
-</p>
+<br>
 
 <div align="center" display: "inline_block">
   
