@@ -7,7 +7,7 @@ Backend Developer
 <br>
 
 <p align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=pedroFnseca&theme=dark">
+<img height="150em" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroFnseca&theme=dark">
 </p>
 
 <div align="center" display: "inline_block">
