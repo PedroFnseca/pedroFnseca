@@ -6,6 +6,10 @@ Backend Developer
 
 <br>
 
+<p align="center">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=pedroFnseca">
+</p>
+
 <div align="center" display: "inline_block">
   
 ## 👨‍💻 Languages and Tools 🛠️
