@@ -33,7 +33,7 @@ Backend Developer
 <br>
 
 <p align="center">
-<img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedrofnseca&layout=compact&langs_count=7&theme=dark"/>
+<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedrofnseca&layout=compact&langs_count=7&theme=dark"/>
 </p>
 
 <p align="center">
