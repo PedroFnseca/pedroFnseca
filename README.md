@@ -33,15 +33,15 @@ Backend Developer
 <br>
 
 <p align="center">
-<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedrofnseca&layout=compact&langs_count=7&theme=dark"/>
+<img width="350em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedrofnseca&layout=compact&langs_count=7&theme=dark"/>
 </p>
 
 <p align="center">
 <a href="https://www.instagram.com/pedro_fnseca/">
-<img target="blank" src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white"/>
+<img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white"/>
 </a>
 
 <a href="https://www.linkedin.com/in/pedrofnseca/">
-<img target="blank" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
+<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 </p>
