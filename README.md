@@ -1,3 +1,4 @@
+<!-- Titulo -->
 <h1 align="center"> 
 <img align="center" src="https://img.icons8.com/external-filled-outline-wichaiwi/30/000000/external-backend-jobs-and-occupations-filled-outline-wichaiwi.png"/>
 Backend Developer
@@ -32,15 +33,25 @@ Backend Developer
 
 <br>
 
+<!-- Troféus -->
+<p align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=pedrofnseca&theme=onestar&margin-w=15"/>
+</p>
+
+<br>
+
+<!-- Linguagens mais usadas -->
 <p align="center">
 <img width="350em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedrofnseca&layout=compact&langs_count=7&theme=dark"/>
 </p>
 
+<!-- Instagram -->
 <p align="center">
 <a href="https://www.instagram.com/pedro_fnseca/">
 <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white"/>
 </a>
 
+<!-- linkedin -->
 <a href="https://www.linkedin.com/in/pedrofnseca/">
 <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
