@@ -15,11 +15,13 @@ Backend Developer
   
 ## 👨‍💻 Languages and Tools 🛠️
 
+<br>
+
 <img align="center" src="https://img.icons8.com/color/48/javascript.png" >
 <img align="center" src="https://img.icons8.com/color/48/python.png" >
 <img align="center" src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>
 <img align="center" src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"/>
-<img align="center" src="https://img.icons8.com/color/48/000000/android-studio--v3.png"/>
+<img align="center" src="https://img.icons8.com/color/48/000000/console.png"/>
 <img align="center" src="https://img.icons8.com/color/48/html-5--v1.png" >
 <img align="center" src="https://img.icons8.com/color/48/css3.png" >
 <img align="center" src="https://img.icons8.com/color/48/mysql-logo.png" >
@@ -30,6 +32,8 @@ Backend Developer
 <img align="center" src="https://img.icons8.com/color/48/000000/git.png"/>
 <img align="center" src="https://img.icons8.com/color/48/000000/arduino.png"/>
 </div>
+
+#
 
 <br>
 
