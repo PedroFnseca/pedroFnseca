@@ -1,7 +1,7 @@
 <!-- Titulo -->
 <h1 align="center"> 
 <img align="center" src="https://img.icons8.com/external-filled-outline-wichaiwi/30/000000/external-backend-jobs-and-occupations-filled-outline-wichaiwi.png"/>
-Backend Developer
+Fullstack Developer
 <img align="center" src="https://img.icons8.com/color/30/000000/linux--v1.png"/> 
 </h1>
 
