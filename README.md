@@ -11,11 +11,12 @@ Fullstack Developer
 <img height="150em" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroFnseca&theme=dark">
 </p>
 
+<br>
+
 <div align="center" display: "inline_block">
   
 ## 👨‍💻 Languages and Tools 🛠️
 
-<br>
 
 <img align="center" src="https://img.icons8.com/color/48/javascript.png" >
 <img align="center" src="https://img.icons8.com/color/48/python.png" >
@@ -32,15 +33,6 @@ Fullstack Developer
 <img align="center" src="https://img.icons8.com/color/48/000000/git.png"/>
 <img align="center" src="https://img.icons8.com/color/48/000000/arduino.png"/>
 </div>
-
-#
-
-<br>
-
-<!-- Troféus -->
-<p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=pedrofnseca&theme=onestar&margin-w=15"/>
-</p>
 
 <br>
 
