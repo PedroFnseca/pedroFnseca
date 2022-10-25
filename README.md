@@ -1,8 +1,6 @@
 <!-- Titulo -->
 <h1 align="center"> 
-<img align="center" src="https://img.icons8.com/external-filled-outline-wichaiwi/30/000000/external-backend-jobs-and-occupations-filled-outline-wichaiwi.png"/>
-Fullstack Developer
-<img align="center" src="https://img.icons8.com/color/30/000000/linux--v1.png"/> 
+Pedro Fonseca
 </h1>
 
 <br>
@@ -22,16 +20,16 @@ Fullstack Developer
 <img align="center" src="https://img.icons8.com/color/48/python.png" >
 <img align="center" src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>
 <img align="center" src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"/>
-<img align="center" src="https://img.icons8.com/color/48/000000/console.png"/>
 <img align="center" src="https://img.icons8.com/color/48/html-5--v1.png" >
 <img align="center" src="https://img.icons8.com/color/48/css3.png" >
 <img align="center" src="https://img.icons8.com/color/48/mysql-logo.png" >
-<img align="center" src="https://img.icons8.com/color/48/firebase.png" >
 <img align="center" src="https://img.icons8.com/color/48/000000/nodejs.png"/>
 <img align="center" src="https://img.icons8.com/color/48/000000/react-native.png"/>
+<img align="center" src="https://img.icons8.com/color/48/000000/arduino.png"/>
+<img align="center" src="https://img.icons8.com/color/48/000000/linux--v1.png"/>
+<img align="center" src="https://img.icons8.com/fluency/48/000000/azure-1.png" >
 <img align="center" src="https://img.icons8.com/color/48/000000/heroku.png"/>
 <img align="center" src="https://img.icons8.com/color/48/000000/git.png"/>
-<img align="center" src="https://img.icons8.com/color/48/000000/arduino.png"/>
 </div>
 
 <br>
