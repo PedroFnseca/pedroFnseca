@@ -1,13 +1,21 @@
-<!-- Titulo -->
-<h1 align="center"> 
-Pedro Fonseca
-</h1>
 
-<br>
-
-<p align="center">
-<img height="150em" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroFnseca&theme=dark">
-</p>
+```js
+export default () => ({
+  name: "Pedro Fonseca",
+  favoriteLanguage: ["Javascript", "Java", "SQL", "C"],
+  preffers: {
+    backend: "NodeJS",
+    frontend: "ReactJS",
+    language: "Javascript",
+    database: "Mysql",
+    architecture: "learning about and loving it",
+    cloud: "Azure", 
+    protocol: ["Http", "Websocket"],
+    os: "Linux", // Ubuntu and !pop_os
+    theme: "dark"
+  }
+});
+```
 
 <br>
 
