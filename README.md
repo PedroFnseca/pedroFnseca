@@ -78,7 +78,7 @@
 ---
 
 <p align="center">
-<img align="left" height="150" src="https://github-readme-stats.vercel.app/api/top-langs?username=pedrofnseca&show_icons=true&locale=en&layout=compact&theme=dark" alt="pedrofnseca" />
+<img align="left" height="150" src="https://github-readme-stats.vercel.app/api/top-langs?username=pedrofnseca&show_icons=true&locale=en&layout=compact&theme=dark&hide=html,css" alt="pedrofnseca" />
 
 <img align="right" height="150" src="https://github-readme-streak-stats.herokuapp.com/?user=pedrofnseca&theme=dark" alt="pedrofnseca" />
 </p>
