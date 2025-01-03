@@ -92,10 +92,3 @@ I'm a Full Stack Developer, passionate about creating efficient solutions using 
   <img align="right" height="150" src="https://github-readme-streak-stats.herokuapp.com/?user=pedrofnseca&theme=dark" alt="pedrofnseca"/>
 </p>
 
----
-
-### 📬 **Contact Me**:
-You can reach me via [LinkedIn](https://www.linkedin.com/in/pedrofnseca). Let's connect!
-
----
-
