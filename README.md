@@ -1,8 +1,11 @@
-<h1 align="center">Hi 👋, I'm Pedro Fonseca</h1>
-<h3 align="center">Innovator in tech, always reaching new heights! 🚀</h3>
+<h1 align="center">Hi, I'm Pedro Fonseca <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/raw/master/Assets/Hi.gif" width="4%"></h1>
+<h3 align="center">Innovator in Tech | Full Stack Developer</h3>
 
+<p align="center">
+  <em>Transforming complex challenges into elegant, efficient solutions—from low-level programming to cloud computing.</em>
+</p>
 
-I'm a Full Stack Developer, passionate about creating efficient solutions using cutting-edge technologies. I thrive in projects ranging from low-level programming to cloud computing.
+---
 
 ### 🔧 **Technologies I Work With**:
 <div align="center">
@@ -77,8 +80,6 @@ I'm a Full Stack Developer, passionate about creating efficient solutions using 
     </a>
   </p>
 </div>
-
----
 
 ### 🛠 **What I Build**:
 - **[Sombras do Sertão](https://github.com/PedroFnseca/sombras-do-sertao)**: A 2D game about Brazilian cangaço, built with Allegro and C.
