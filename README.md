@@ -1,13 +1,10 @@
 <h1 align="center">Hey, I'm Pedro Fonseca <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/raw/master/Assets/Hi.gif" width="4%"></h1>
-<h3 align="center">Full Stack Dev | Low-Level Coder | Cloud Enthusiast</h3>
 
 <p align="center">
   <em>
-    I turn ideas into systems. From low-level C projects to full-blown cloud architectures, I build things from scratch and love every bit of it.
+    I turn ideas into systems. From low-level C projects to full-blown cloud architectures.
   </em>
 </p>
-
----
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" />
