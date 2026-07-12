@@ -34,6 +34,7 @@
 - **[Sombras do Sertão](https://github.com/PedroFnseca/sombras-do-sertao)** – Retro-style game about the Brazilian cangaço made in C (A lot of math and no engine).
 - **[REST API in C](https://github.com/PedroFnseca/rest-api-C)** – REST API built in C to explore low-level backend architecture (My best known project).
 - **[Logger Endpoints API](https://github.com/PedroFnseca/logger-endpoints-api)** – Minimal Express middleware that logs HTTP requests (Simple idea, built for real-world use).
+- **[esp32 http client](https://github.com/PedroFnseca/esp32-http-client)** - A lightweight REST API client for ESP32.
 
 ### 🎤 **Talks**
 - I’ve given tech talks at technical schools like **SENAI**, **SENAC**, and **ETEC**, teaching topics ranging from GitHub automations to how to create impactful personal projects, sharing practical insights to inspire students and aspiring developers.
