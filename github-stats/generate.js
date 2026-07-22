@@ -163,8 +163,16 @@ function buildCard(stats) {
     return `+${'-'.repeat(LEFT_INNER)}+${'-'.repeat(RIGHT_INNER)}+`;
   }
 
+  function vLen(str) {
+    return str.replace(/§[a-z]+§/g, '').length;
+  }
+  function vPad(str, width) {
+    const len = vLen(str);
+    return str + ' '.repeat(Math.max(0, width - len));
+  }
+
   function row(left = '', right = '') {
-    return `|${` ${left}`.padEnd(LEFT_INNER)}|${` ${right}`.padEnd(RIGHT_INNER)}|`;
+    return `|${vPad(` ${left}`, LEFT_INNER)}|${vPad(` ${right}`, RIGHT_INNER)}|`;
   }
 
   const ascii = [
@@ -208,39 +216,44 @@ function buildCard(stats) {
   const langLines = stats.topLanguages.map(([lang, bytes]) => {
     const pct    = totalBytes > 0 ? (bytes / totalBytes) * 100 : 0;
     const pctStr = `${Math.round(pct)}%`.padStart(4);
-    const bar    = buildBar(pct, BAR_W);
-    const name   = truncate(lang, LANG_W).padEnd(LANG_W);
-    return `${name} ${bar} ${pctStr}`;
+    
+    const filled = Math.round((Math.min(pct, 100) / 100) * BAR_W);
+    const bar = `[§green§${'#'.repeat(filled)}§reset§§gray§${'-'.repeat(BAR_W - filled)}§reset§]`;
+    
+    const name   = truncate(lang, LANG_W);
+    const paddedName = vPad(name, LANG_W);
+    return `§cyan§${paddedName}§reset§ ${bar} §green§${pctStr}§reset§`;
   });
 
   const right = [
-    NAME,
+    `§green§${NAME}§reset§`,
     '-'.repeat(NAME.length),
-    ROLES[0],
-    ROLES[1],
-    ROLES[2],
+    `§cyan§${ROLES[0]}§reset§`,
+    `§cyan§${ROLES[1]}§reset§`,
+    `§cyan§${ROLES[2]}§reset§`,
     '',
-    'GITHUB',
+    `§magenta§GITHUB§reset§`,
     '',
-    `${'Stars'.padEnd(SC)}${'Repos'.padEnd(SC)}${'Followers'.padEnd(SC)}${'Activity'.padEnd(SC)}`,
-    `${String(stats.totalStars).padEnd(SC)}${String(stats.publicRepos).padEnd(SC)}${String(stats.followers).padEnd(SC)}${String(stats.contributions).padEnd(SC)}`,
+    `§gray§${vPad('Stars', SC)}${vPad('Repos', SC)}${vPad('Followers', SC)}Activity§reset§`,
+    `§yellow§${vPad(String(stats.totalStars), SC)}${vPad(String(stats.publicRepos), SC)}${vPad(String(stats.followers), SC)}§reset§§green§${stats.contributions}§reset§`,
     '',
-    'TOP REPOSITORIES',
+    `§magenta§TOP REPOSITORIES§reset§`,
     '',
     ...stats.topRepos.map((repo, i) => {
-      const num  = `0${i + 1}`;
-      const name = truncate(repo.name, 30).padEnd(31);
-      const star = `* ${repo.stargazers_count}`.padEnd(8);
-      const fork = `f ${repo.forks_count}`;
-      return `${num}  ${name}${star}${fork}`;
+      const num  = `§gray§0${i + 1}§reset§`;
+      const name = `§blue§${vPad(truncate(repo.name, 30), 31)}§reset§`;
+      const star = `§yellow§* ${repo.stargazers_count}§reset§`;
+      const paddedStar = vPad(star, 8);
+      const fork = `§gray§f ${repo.forks_count}§reset§`;
+      return `${num}  ${name}${paddedStar}${fork}`;
     }),
     '',
-    'LANGUAGES',
+    `§magenta§LANGUAGES§reset§`,
     '',
     ...langLines,
     '',
     '',
-    '@PedroFnseca:~$ █'
+    `§green§@PedroFnseca§reset§§gray§:~$§reset§ █`
   ];
 
   const maxRows = Math.max(ascii.length, right.length);
@@ -291,6 +304,15 @@ function generateSVG(stats) {
       .map((line, j) => {
         const y = PAD_Y + (j + 1) * LINE_H;
         let escaped = escapeXML(nbsp(line)).replace('█', '<tspan class="cursor">&#9608;</tspan>');
+        escaped = escaped
+          .replace(/§red§/g, '<tspan fill="#ff7b72">')
+          .replace(/§green§/g, '<tspan fill="#3fb950">')
+          .replace(/§blue§/g, '<tspan fill="#58a6ff">')
+          .replace(/§cyan§/g, '<tspan fill="#39c5cf">')
+          .replace(/§yellow§/g, '<tspan fill="#e3b341">')
+          .replace(/§magenta§/g, '<tspan fill="#d2a8ff">')
+          .replace(/§gray§/g, '<tspan fill="#8b949e">')
+          .replace(/§reset§/g, '</tspan>');
         return `    <text x="${PAD_X}" y="${y}">${escaped}</text>`;
       })
       .join('\n');
