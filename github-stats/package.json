@@ -1,0 +1,12 @@
+{
+  "name": "github-stats",
+  "version": "1.0.0",
+  "description": "GitHub profile SVG card generator for PedroFnseca",
+  "main": "generate.js",
+  "scripts": {
+    "generate": "node generate.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
