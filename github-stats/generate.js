@@ -267,9 +267,9 @@ function buildCard(stats) {
 
 function generateSVG(stats) {
   const FONT_SIZE = 16;
-  const LINE_H    = 22;
+  const LINE_H    = 20;
   const PAD_X     = 16;
-  const PAD_Y     = 14;
+  const PAD_Y     = 15;
   
   const FRAMES = 35;
   const DUR    = 4.0;
@@ -322,7 +322,7 @@ function generateSVG(stats) {
 
   const finalLines = buildCard(stats);
   const contentH = finalLines.length * LINE_H + PAD_Y * 2;
-  const maxLen = Math.max(...finalLines.map(l => l.length));
+  const maxLen = Math.max(...finalLines.map(l => l.replace(/§[a-z]+§/g, '').length));
   const contentW = Math.ceil(maxLen * FONT_SIZE * 0.605) + PAD_X * 2;
 
   const TARGET_W = 1200;
