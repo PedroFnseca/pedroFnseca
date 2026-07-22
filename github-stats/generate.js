@@ -253,8 +253,8 @@ function buildCard(stats) {
 }
 
 function generateSVG(stats) {
-  const FONT_SIZE = 13;
-  const LINE_H    = 18;
+  const FONT_SIZE = 16;
+  const LINE_H    = 22;
   const PAD_X     = 16;
   const PAD_Y     = 14;
   
@@ -304,7 +304,7 @@ function generateSVG(stats) {
   const contentW = Math.ceil(maxLen * FONT_SIZE * 0.605) + PAD_X * 2;
 
   const TARGET_W = 1200;
-  const TARGET_H = 630;
+  const TARGET_H = 720;
   const offsetX  = Math.max(0, Math.floor((TARGET_W - contentW) / 2));
   const offsetY  = Math.max(0, Math.floor((TARGET_H - contentH) / 2));
 
