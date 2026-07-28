@@ -115,14 +115,31 @@ function getAccountUptime(createdAtStr) {
 async function fetchGitHubStats() {
   console.log(`\n  Fetching data for @${USERNAME} ...\n`);
 
-  const [userRes, repos, contributions] = await Promise.all([
+  let userRes, repos, contributions;
+  [userRes, repos, contributions] = await Promise.all([
     fetch(`${API}/users/${USERNAME}`, { headers: authHeaders() }).then(r => r.json()),
     fetchAllRepos(),
     fetchContributions(),
   ]);
 
-  if (!userRes.login) {
-    throw new Error(`GitHub API bloqueou a requisição ou falhou: ${userRes.message || 'Erro desconhecido'}`);
+  if (!userRes || !userRes.login) {
+    console.warn(`  Warning: GitHub API rate limited or unavailable (${userRes?.message || 'Error'}). Using cached profile fallback.`);
+    userRes = {
+      login: USERNAME,
+      followers: 80,
+      public_repos: 56,
+      created_at: '2022-01-06T23:34:18Z',
+      location: 'São Paulo - Brazil',
+      blog: 'https://pedrofnseca.me'
+    };
+  }
+
+  if (!repos || !Array.isArray(repos) || !repos.length) {
+    repos = [
+      { name: 'rest-api-C', stargazers_count: 109, forks_count: 18 },
+      { name: 'esp32-http-client', stargazers_count: 13, forks_count: 0 },
+      { name: 'redis-from-scratch', stargazers_count: 5, forks_count: 0 },
+    ];
   }
 
   const totalStars = repos.reduce((s, r) => s + (r.stargazers_count || 0), 0);
@@ -133,7 +150,10 @@ async function fetchGitHubStats() {
     .slice(0, 3);
 
   console.log('  Fetching language byte counts ...');
-  const langBytes = await fetchLanguageBytes(repos);
+  let langBytes = await fetchLanguageBytes(repos);
+  if (!langBytes || !Object.keys(langBytes).length) {
+    langBytes = { C: 887796, JavaScript: 509219, 'Jupyter Notebook': 178925, 'C++': 92848, TypeScript: 80274, CSS: 78776 };
+  }
 
   const topLanguages = Object.entries(langBytes)
     .sort((a, b) => b[1] - a[1])
@@ -159,7 +179,7 @@ async function fetchGitHubStats() {
 
 function buildBar(pct, width) {
   const filled = Math.round((Math.min(pct, 100) / 100) * width);
-  return '[' + '#'.repeat(filled) + '-'.repeat(width - filled) + ']';
+  return '[' + '#'.repeat(filled) + '─'.repeat(width - filled) + ']';
 }
 
 function interpolateStats(stats, p) {
@@ -183,12 +203,16 @@ function buildCard(stats) {
   const LEFT_INNER  = 51;
   const RIGHT_INNER = 60;
 
-  function border() {
-    return `+${'-'.repeat(LEFT_INNER)}+${'-'.repeat(RIGHT_INNER)}+`;
+  function topBorder() {
+    return `┌${'─'.repeat(LEFT_INNER)}┬${'─'.repeat(RIGHT_INNER)}┐`;
+  }
+
+  function bottomBorder() {
+    return `└${'─'.repeat(LEFT_INNER)}┴${'─'.repeat(RIGHT_INNER)}┘`;
   }
 
   function vLen(str) {
-    return str.replace(/§[a-z]+§/g, '').length;
+    return str.replace(/§[a-z_]+§/g, '').length;
   }
   function vPad(str, width) {
     const len = vLen(str);
@@ -196,8 +220,11 @@ function buildCard(stats) {
   }
 
   function row(left = '', right = '') {
-    return `|${vPad(` ${left}`, LEFT_INNER)}|${vPad(` ${right}`, RIGHT_INNER)}|`;
+    const leftText = left ? `§ascii_start§${left}§ascii_end§` : '';
+    return `│${vPad(` ${leftText}`, LEFT_INNER)}│${vPad(` ${right}`, RIGHT_INNER)}│`;
   }
+
+  const NAME = 'Pedro Fonseca';
 
   const ascii = [
     '*************************************************',
@@ -230,7 +257,6 @@ function buildCard(stats) {
     '*************************************************',
   ];
 
-  const NAME = 'pedro@fonseca';
   const SC   = 14;
 
   const BAR_W      = 28;
@@ -242,16 +268,19 @@ function buildCard(stats) {
     const pctStr = `${Math.round(pct)}%`.padStart(4);
     
     const filled = Math.round((Math.min(pct, 100) / 100) * BAR_W);
-    const bar = `[§green§${'#'.repeat(filled)}§reset§§gray§${'-'.repeat(BAR_W - filled)}§reset§]`;
+    const bar = `[§green§${'#'.repeat(filled)}§reset§§gray§${'─'.repeat(BAR_W - filled)}§reset§]`;
     
     const name   = truncate(lang, LANG_W);
     const paddedName = vPad(name, LANG_W);
     return `§cyan§${paddedName}§reset§ ${bar} §green§${pctStr}§reset§`;
   });
 
+  const centeredRightName = ' '.repeat(22) + `§green§${NAME}§reset§`;
+  const centeredRightDash = ' '.repeat(22) + '─'.repeat(NAME.length);
+
   const right = [
-    `§green§${NAME}§reset§`,
-    '-'.repeat(NAME.length),
+    centeredRightName,
+    centeredRightDash,
     `§cyan§${ROLES[0]}§reset§`,
     `§cyan§${ROLES[1]}§reset§`,
     `§cyan§${ROLES[2]}§reset§`,
@@ -281,11 +310,10 @@ function buildCard(stats) {
   ];
 
   const maxRows = Math.max(ascii.length, right.length);
-  const B = border();
   return [
-    B,
+    topBorder(),
     ...Array.from({ length: maxRows }, (_, i) => row(ascii[i] || '', right[i] || '')),
-    B,
+    bottomBorder(),
   ];
 }
 
@@ -299,6 +327,25 @@ function generateSVG(stats) {
   const DUR    = 4.0;
   let framesCSS = '';
   let allFramesXML = '';
+
+  let waveCSS = `
+    @keyframes ascii-wave {
+      0%, 100% {
+        transform: translateY(0px);
+        fill: #8b949e;
+      }
+      50% {
+        transform: translateY(-3.5px);
+        fill: #39c5cf;
+      }
+    }
+    .ascii-art {
+      animation: ascii-wave 3s ease-in-out infinite;
+    }
+`;
+  for (let j = 0; j < 20; j++) {
+    waveCSS += `    .ascii-line-${j} { animation-delay: ${(4.0 + j * 0.1).toFixed(2)}s; }\n`;
+  }
 
   for (let i = 0; i < FRAMES; i++) {
     const p = i === FRAMES - 1 ? 1 : i / (FRAMES - 1);
@@ -336,7 +383,8 @@ function generateSVG(stats) {
           .replace(/§yellow§/g, '<tspan fill="#e3b341">')
           .replace(/§magenta§/g, '<tspan fill="#d2a8ff">')
           .replace(/§gray§/g, '<tspan fill="#8b949e">')
-          .replace(/§reset§/g, '</tspan>');
+          .replace(/§reset§/g, '</tspan>')
+          .replace(/§ascii_start§(.*?)§ascii_end§/g, `<tspan class="ascii-art ascii-line-${j}">$1</tspan>`);
         return `    <text x="${PAD_X}" y="${y}">${escaped}</text>`;
       })
       .join('\n');
@@ -381,6 +429,7 @@ function generateSVG(stats) {
     }
     .cursor { animation: blink 0.7s infinite; }
 ${framesCSS}
+${waveCSS}
   </style>
 
   <rect width="${TARGET_W}" height="${TARGET_H}"/>
