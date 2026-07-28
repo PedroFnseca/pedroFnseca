@@ -96,6 +96,22 @@ async function fetchLanguageBytes(repos) {
   return langBytes;
 }
 
+function getAccountUptime(createdAtStr) {
+  if (!createdAtStr) return 'N/A';
+  const created = new Date(createdAtStr);
+  const now = new Date();
+  let years = now.getFullYear() - created.getFullYear();
+  let months = now.getMonth() - created.getMonth();
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+  const yPart = years > 0 ? `${years} year${years > 1 ? 's' : ''}` : '';
+  const mPart = months > 0 ? `${months} month${months > 1 ? 's' : ''}` : '';
+  if (yPart && mPart) return `${yPart}, ${mPart}`;
+  return yPart || mPart || '1 month';
+}
+
 async function fetchGitHubStats() {
   console.log(`\n  Fetching data for @${USERNAME} ...\n`);
 
@@ -123,6 +139,11 @@ async function fetchGitHubStats() {
     .sort((a, b) => b[1] - a[1])
     .slice(0, 6);
 
+  const location = userRes.location || 'São Paulo - Brazil';
+  let website = userRes.blog ? userRes.blog.replace(/^https?:\/\//, '').replace(/\/$/, '') : 'www.pedrofnseca.me';
+  if (!website.startsWith('www.')) website = 'www.' + website;
+  const uptime = getAccountUptime(userRes.created_at);
+
   return {
     followers:     userRes.followers    ?? 0,
     publicRepos:   userRes.public_repos ?? repos.length,
@@ -130,6 +151,9 @@ async function fetchGitHubStats() {
     contributions: contributions ?? '-',
     topRepos,
     topLanguages,
+    location,
+    website,
+    uptime,
   };
 }
 
@@ -232,13 +256,15 @@ function buildCard(stats) {
     `§cyan§${ROLES[1]}§reset§`,
     `§cyan§${ROLES[2]}§reset§`,
     '',
-    `§magenta§GITHUB§reset§`,
+    `§gray§Location: §reset§§yellow§${stats.location}§reset§`,
+    `§gray§Website:  §reset§§blue§${stats.website}§reset§`,
+    `§gray§Uptime:   §reset§§green§${stats.uptime}§reset§`,
     '',
+    `§magenta§GITHUB§reset§`,
     `§gray§${vPad('Stars', SC)}${vPad('Repos', SC)}${vPad('Followers', SC)}Activity§reset§`,
     `§yellow§${vPad(String(stats.totalStars), SC)}${vPad(String(stats.publicRepos), SC)}${vPad(String(stats.followers), SC)}§reset§§green§${stats.contributions}§reset§`,
     '',
     `§magenta§TOP REPOSITORIES§reset§`,
-    '',
     ...stats.topRepos.map((repo, i) => {
       const num  = `§gray§0${i + 1}§reset§`;
       const name = `§blue§${vPad(truncate(repo.name, 30), 31)}§reset§`;
@@ -249,9 +275,7 @@ function buildCard(stats) {
     }),
     '',
     `§magenta§LANGUAGES§reset§`,
-    '',
     ...langLines,
-    '',
     '',
     `§green§@PedroFnseca§reset§§gray§:~$§reset§ █`
   ];
