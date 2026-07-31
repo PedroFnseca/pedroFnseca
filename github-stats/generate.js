@@ -275,8 +275,9 @@ function buildCard(stats) {
     return `§cyan§${paddedName}§reset§ ${bar} §green§${pctStr}§reset§`;
   });
 
-  const centeredRightName = ' '.repeat(22) + `§green§${NAME}§reset§`;
-  const centeredRightDash = ' '.repeat(22) + '─'.repeat(NAME.length);
+  const namePad = Math.max(0, Math.floor((RIGHT_INNER - NAME.length) / 2));
+  const centeredRightName = ' '.repeat(namePad) + `§green§${NAME}§reset§`;
+  const centeredRightDash = ' '.repeat(namePad) + '─'.repeat(NAME.length);
 
   const right = [
     centeredRightName,
@@ -394,8 +395,8 @@ function generateSVG(stats) {
 
   const finalLines = buildCard(stats);
   const contentH = finalLines.length * LINE_H + PAD_Y * 2;
-  const maxLen = Math.max(...finalLines.map(l => l.replace(/§[a-z]+§/g, '').length));
-  const contentW = Math.ceil(maxLen * FONT_SIZE * 0.605) + PAD_X * 2;
+  const maxLen = Math.max(...finalLines.map(l => l.replace(/§[a-z_]+§/g, '').length));
+  const contentW = Math.ceil(maxLen * FONT_SIZE * 0.6) + PAD_X * 2;
 
   const TARGET_W = 1200;
   const TARGET_H = 720;
