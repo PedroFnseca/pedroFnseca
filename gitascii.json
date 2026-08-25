@@ -1,0 +1,71 @@
+{
+  "username": "PedroFnseca",
+  "widgets": [
+    {
+      "instanceId": "widget_1787662424017",
+      "widgetId": "premium-ascii-profile-card",
+      "name": "Premium-ascii-profile-card Widget",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 464,
+        "height": 464
+      },
+      "config": {
+        "lockAspectRatio": true,
+        "transparentBackground": true,
+        "backgroundColor": "transparent",
+        "accentColor": "#3fb950",
+        "secondaryColor": "#39c5cf",
+        "borderColor": "#30363d",
+        "hideLangsArr": [
+          "Jupyter Notebook",
+          "HTML",
+          "CSS"
+        ],
+        "hideLangs": "Jupyter Notebook,HTML,CSS"
+      },
+      "locked": false,
+      "visible": true,
+      "zIndex": 1
+    },
+    {
+      "instanceId": "widget_1787662650573",
+      "widgetId": "gitfut-card",
+      "name": "Gitfut-card Widget",
+      "position": {
+        "x": 472,
+        "y": 22
+      },
+      "size": {
+        "width": 300,
+        "height": 420
+      },
+      "config": {
+        "transparentBackground": true,
+        "hideBorder": true,
+        "hideDecorations": true,
+        "showTitle": false,
+        "enableHolo": false
+      },
+      "locked": false,
+      "visible": true,
+      "zIndex": 2
+    }
+  ],
+  "globalStyles": {
+    "backgroundColor": "#060606",
+    "textColor": "#e5e5e5",
+    "accentColor": "#c5ff4a",
+    "borderColor": "#252525",
+    "fontFamily": "'JetBrains Mono', monospace",
+    "borderRadius": 0,
+    "padding": 24,
+    "themeMode": "dark",
+    "templateStyle": "native"
+  },
+  "templateId": "minimal",
+  "profileSlug": "default"
+}
