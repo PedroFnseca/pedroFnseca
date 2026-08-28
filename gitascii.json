@@ -84,7 +84,8 @@
     "borderRadius": 0,
     "padding": 24,
     "themeMode": "dark",
-    "templateStyle": "blank"
+    "templateStyle": "blank",
+    "transparentBackground": true
   },
   "templateId": "blank",
   "profileSlug": "default"
