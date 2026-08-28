@@ -2,7 +2,7 @@
   "username": "PedroFnseca",
   "widgets": [
     {
-      "instanceId": "widget_1787662424017",
+      "instanceId": "widget_1787745933450",
       "widgetId": "premium-ascii-profile-card",
       "name": "Premium-ascii-profile-card Widget",
       "position": {
@@ -10,8 +10,8 @@
         "y": 0
       },
       "size": {
-        "width": 464,
-        "height": 464
+        "width": 488,
+        "height": 488
       },
       "config": {
         "lockAspectRatio": true,
@@ -19,35 +19,55 @@
         "backgroundColor": "transparent",
         "accentColor": "#3fb950",
         "secondaryColor": "#39c5cf",
-        "borderColor": "#30363d",
-        "hideLangsArr": [
-          "Jupyter Notebook",
-          "HTML",
-          "CSS"
-        ],
-        "hideLangs": "Jupyter Notebook,HTML,CSS"
+        "borderColor": "#30363d"
       },
       "locked": false,
       "visible": true,
       "zIndex": 1
     },
     {
-      "instanceId": "widget_1787662650573",
-      "widgetId": "gitfut-card",
-      "name": "Gitfut-card Widget",
+      "instanceId": "widget_1787745970792",
+      "widgetId": "pokemon-card",
+      "name": "Pokemon-card Widget",
       "position": {
-        "x": 472,
-        "y": 22
+        "x": 488,
+        "y": 35
       },
       "size": {
         "width": 300,
-        "height": 420
+        "height": 418
       },
       "config": {
-        "transparentBackground": true,
-        "hideBorder": true,
-        "hideDecorations": true,
-        "showTitle": false,
+        "searchQuery": "Toto",
+        "searchCards": [
+          {
+            "id": "neo1-80",
+            "name": "Totodile",
+            "image": "https://images.pokemontcg.io/neo1/80.png"
+          },
+          {
+            "id": "neo1-81",
+            "name": "Totodile",
+            "image": "https://images.pokemontcg.io/neo1/81.png"
+          },
+          {
+            "id": "neo4-85",
+            "name": "Totodile",
+            "image": "https://images.pokemontcg.io/neo4/85.png"
+          },
+          {
+            "id": "dp2-106",
+            "name": "Totodile",
+            "image": "https://images.pokemontcg.io/dp2/106.png"
+          },
+          {
+            "id": "hgss1-86",
+            "name": "Totodile",
+            "image": "https://images.pokemontcg.io/hgss1/86.png"
+          }
+        ],
+        "imageUrl": "https://images.pokemontcg.io/neo1/81.png",
+        "cardRawUrl": "https://images.pokemontcg.io/neo1/81.png",
         "enableHolo": false
       },
       "locked": false,
@@ -60,12 +80,12 @@
     "textColor": "#e5e5e5",
     "accentColor": "#c5ff4a",
     "borderColor": "#252525",
-    "fontFamily": "'JetBrains Mono', monospace",
+    "fontFamily": "'Inter Tight', sans-serif",
     "borderRadius": 0,
     "padding": 24,
     "themeMode": "dark",
-    "templateStyle": "native"
+    "templateStyle": "blank"
   },
-  "templateId": "minimal",
+  "templateId": "blank",
   "profileSlug": "default"
 }
