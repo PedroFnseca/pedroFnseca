@@ -73,54 +73,6 @@
       "locked": false,
       "visible": true,
       "zIndex": 2
-    },
-    {
-      "instanceId": "widget_1788114170064",
-      "widgetId": "premium-ascii-dev-score",
-      "name": "Premium-ascii-dev-score Widget",
-      "position": {
-        "x": 478,
-        "y": 436
-      },
-      "size": {
-        "width": 320,
-        "height": 320
-      },
-      "config": {
-        "lockAspectRatio": true,
-        "transparentBackground": true,
-        "backgroundColor": "transparent",
-        "accentColor": "#3fb950",
-        "secondaryColor": "#39c5cf",
-        "borderColor": "#30363d"
-      },
-      "locked": false,
-      "visible": true,
-      "zIndex": 3
-    },
-    {
-      "instanceId": "widget_1788114226712",
-      "widgetId": "premium-ascii-dna",
-      "name": "Premium-ascii-dna Widget",
-      "position": {
-        "x": 8,
-        "y": 360
-      },
-      "size": {
-        "width": 472,
-        "height": 472
-      },
-      "config": {
-        "lockAspectRatio": true,
-        "transparentBackground": true,
-        "backgroundColor": "transparent",
-        "accentColor": "#3fb950",
-        "secondaryColor": "#39c5cf",
-        "borderColor": "#30363d"
-      },
-      "locked": false,
-      "visible": true,
-      "zIndex": 4
     }
   ],
   "globalStyles": {
