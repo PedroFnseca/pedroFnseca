@@ -81,7 +81,7 @@
     "accentColor": "#c5ff4a",
     "borderColor": "#252525",
     "fontFamily": "'Inter Tight', sans-serif",
-    "borderRadius": 1,
+    "borderRadius": 0,
     "padding": 24,
     "themeMode": "dark",
     "templateStyle": "blank",
